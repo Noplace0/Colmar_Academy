@@ -1,0 +1,4 @@
+# ignore myself
+#.gitignore
+# ignore vscode settings
+.vscode

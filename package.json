@@ -1,0 +1,23 @@
+{
+  "name": "colmar_academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noplace0/Colmar_Academy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noplace0/Colmar_Academy/issues"
+  },
+  "homepage": "https://github.com/Noplace0/Colmar_Academy#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}

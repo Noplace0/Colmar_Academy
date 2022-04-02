@@ -1,0 +1,76 @@
+/* tailwindcss utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding: 10;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.btn{
+    @apply font-bold py-2 px-4 ;
+}
+
+html{
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+@layer base{
+
+}
+
+@layer components{
+    .image-larger{
+        width: 100%;
+    }
+    .btn-green{
+        @apply py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
+    }
+}
+@layer utilities{
+    .p-21{
+        padding: 5.5rem;
+    }
+    @variants hover,focus{
+        .p-21{
+            padding: 5.5rem;
+        }
+    }
+}
+
+.media-container {
+    overflow: hidden;
+  }
+  
+.media-container img,
+.media-container video {
+    @apply w-full block;
+}
+@layer utilities {
+    .content-image-box {
+        @apply flex flex-col py-1;
+        width: 40%;
+    }
+}
+
+.content-image-box .media-container {
+    @apply w-2/6;
+  }
+
+.media-container img,
+.media-container video {
+    @apply w-full block;
+}
+
+@layer utilities {
+    .main-content {
+        @apply w-3/5 pl-5 pr-5;
+    }
+}

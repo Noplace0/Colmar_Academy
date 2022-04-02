@@ -1,12 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Colmar Academy</title>
-    <link rel="stylesheet" href="./resources/css/reset.css" />
+    <link rel="stylesheet" href="./public/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+
+  <body class="bg-white dark:bg-gray-800 dark:text-gray-200">
+    <header
+      class="py-1 outline outline-1 outline-gray-200 dark:outline-gray-600 text-xs text-left"
+    >
+      <div class="hidden ml-6 md:flex md:justify-between items-center">
+        <div>
+          <a class="text-hookpurple text-md lg:text-xl" href="#"
+            ><img
+              class="inline w-5"
+              src="./resources/images/ic-logo.svg"
+            /><span class="text-gray-800 font-semibold">COLMAR</span>ACADEMY</a
+          >
+        </div>
+        <nav
+          class="hidden nav mr-6 sm:flex md:flex justify-between items-center"
+        >
+          <ul>
+            <li
+              class="mr-4 text-hookpurple inline-block text-md hover:underline lg:text-xl"
+            >
+              <a href="#">On campus</a>
+            </li>
+            <li
+              class="mr-4 text-hookpurple inline-block text-md hover:underline lg:text-xl"
+            >
+              <a href="#">Online</a>
+            </li>
+            <li
+              class="mr-4 text-hookpurple inline-block text-md hover:underline lg:text-xl"
+            >
+              <a href="#">On companies</a>
+            </li>
+            <li
+              class="inline-block text-hookpurple text-md hover:underline lg:text-xl"
+            >
+              <a href="#">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="md:hidden lg:hidden ml-6 mr-6 items-center">
+        <ul class="flex justify-around">
+          <li class="">
+            <a href="#"><img src="./resources/images/ic-logo.svg" /></a>
+          </li>
+          <li class="">
+            <a href="#"><img src="./resources/images/ic-on-campus.svg" /></a>
+          </li>
+          <li class="inline-block">
+            <a href="#"><img src="./resources/images/ic-online.svg" /></a>
+          </li>
+          <li class="inline-block">
+            <a href="#"><img src="./resources/images/ic-login.svg" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      class="flex-col items-center bg-softLilac dark:bg-gray-800 py-2 md:flex md:flex-row"
+    >
+      <figure class="md:main-content">
+        <img
+          class="w-full overflow-hidden"
+          src="./resources/images/banner.jpg"
+        />
+      </figure>
+      <div
+        class="flex flex-col sm:w-2/5 items-center md:items-start leading-normal px-6 lg:px-12"
+      >
+        <h1 class="text-hookpurple font-semibold text-md lg:text-5xl">
+          Learn something new everyday
+        </h1>
+        <p class="py-6 text-sm lg:text-md text-digiDenim">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <button class="btn w-5/6 bg-gray-700 hover:underline text-white">
+          Start here
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="my-5 flex items-start w-full bg-white dark:bg-gray-800 md:flex-row"
+    >
+      <figure class="hidden md:block media-container main-content flex-col">
+        <img src="./resources/images/information-main.jpg" />
+        <h1 class="font-semibold text-hookpurple text-2xl pt-8">
+          It doesn't hurt to keep practicing
+        </h1>
+        <p class="text-digiDenim text-md py-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p class="font-semibold text-digiDenim">
+          Emanuel, Sr Strategist at Hiring.com
+        </p>
+      </figure>
+
+      <div class="sm:content-image-box">
+        <div class="flex flex-row border hover:bg-gray-100">
+          <figure class="w-4/12 m-4">
+            <img
+              class="w-full overflow-hidden"
+              src="./resources/images/information-orientation.jpg"
+            />
+          </figure>
+          <div class="lg:pl-5 flex flex-col justify-center w-8/12">
+            <h1 class="text-hookpurple font-semibold sm:text-md lg:text-2xl">
+              Orientation date
+            </h1>
+            <p class="py-2 text-md text-digiDenim">
+              Tue 10/11 & Wed 10/12: 8am-3pm
+            </p>
+            <a class="text-blue-400 hover:underline">Read more</a>
+          </div>
+        </div>
+
+        <div class="py-4 flex flex-row border hover:bg-gray-100">
+          <figure class="w-4/12 m-4">
+            <img
+              class="w-full overflow-hidden"
+              src="./resources/images/information-campus.jpg"
+            />
+          </figure>
+          <div class="lg:pl-5 flex flex-col justify-center w-8/12">
+            <h1 class="text-hookpurple font-semibold sm:text-md lg:text-2xl">
+              Our campus
+            </h1>
+            <p class="py-2 text-md text-digiDenim">
+              Find which campus is close by you
+            </p>
+            <a class="text-blue-400 hover:underline">Read more</a>
+          </div>
+        </div>
+
+        <div class="py-4 flex flex-row border hover:bg-gray-100">
+          <figure class="w-4/12 m-4 block">
+            <img
+              class="w-full overflow-hidden block"
+              src="./resources/images/information-guest-lecture.jpg"
+            />
+          </figure>
+          <div class="lg:pl-5 flex flex-col justify-center w-8/12">
+            <h1 class="text-hookpurple font-semibold sm:text-md lg:text-2xl">
+              Our guest lecture
+            </h1>
+            <p class="py-2 text-md text-digiDenim">
+              Join a keynote with Oliver Sack about music in medical treatment
+            </p>
+            <a class="text-blue-400 hover:underline">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---##############################START LEARNING SECTION#################################-->
+    <section class="bg-softLilac py-2">
+      <h1 class="text-hookpurple font-semibold text-2xl mx-auto text-center">
+        START LEARNING
+      </h1>
+      <!---##############################MOBILE#################################-->
+      <div class="md:hidden">
+        <div class="border py-4 m-2 bg-orchid text-white font-semibold text-xl">
+          Software engineering
+        </div>
+        <div
+          class="border py-4 m-2 bg-turquoise text-white font-semibold text-xl"
+        >
+          Computer art
+        </div>
+        <div
+          class="border py-4 m-2 bg-hookpurple text-white font-semibold text-xl"
+        >
+          Design
+        </div>
+        <div
+          class="border py-4 m-2 bg-digiDenim text-white font-semibold text-xl"
+        >
+          Data
+        </div>
+        <div
+          class="border py-4 m-2 bg-gray-400 text-white font-semibold text-xl"
+        >
+          Business
+        </div>
+        <div class="border py-4 m-2 bg-gray-400 font-semibold text-xl">
+          Marketing
+        </div>
+      </div>
+      <!---##############################MOBILE#################################-->
+      <div class="hidden p-5 md:flex flex-row flex-wrap justify-evenly">
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-software.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">
+              Software engineering
+            </div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              Web Development, Mobile Development, iOT, APIs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-computer-art.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">
+              Computer art
+            </div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+              Computer Animation
+            </p>
+          </div>
+        </div>
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-design.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">Design</div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              User Experience Design, User Research, Visual Design
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-data.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">Data</div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              Product Development, Business, Development, Startup
+            </p>
+          </div>
+        </div>
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-business.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">Business</div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              Product Development, Business, Development, Startup
+            </p>
+          </div>
+        </div>
+        <div
+          class="container mx-auto my-5 max-w-sm rounded overflow-hidden border hover:border-blue-300"
+        >
+          <img
+            class="mx-auto"
+            src="./resources/images/course-marketing.jpg"
+            alt="Software engineering image"
+          />
+          <div class="px-6 py-4 bg-white">
+            <div class="font-bold text-hookpurple text-xl mb-2">Marketing</div>
+            <p>COURSES</p>
+            <p class="text-gray-700 text-base dark:text-gray-100">
+              Analytics, Content Marketing, Mobile Marketing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---##############################THESIS EXHIBITS SECTION#################################-->
+    <section class="my-5 bg-white dark:bg-gray-800 md:flex-row">
+      <h1 class="text-hookpurple font-semibold text-4xl mx-auto text-center">
+        Thesis exhibit
+      </h1>
+      <div
+        class="my-5 flex items-start w-full bg-white dark:bg-gray-800 md:flex-row"
+      >
+        <figure class="media-container md:main-content md:flex-col">
+          <video autoplay muted loop>
+            <source src="resources/videos/thesis.mp4" type="video/mp4" />
+          </video>
+          <h1
+            class="hidden md:block text-hookpurple font-semibold text-2xl pt-8"
+          >
+            Reimagine urban
+          </h1>
+          <p class="hidden md:block text-hookpurple text-md py-6">
+            Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+            commodo lectus, nec consequat neque. Sed non accumsan urna.
+            Phasellus sed onsequat ex. Etiam eget magna laoreet, efficitur dolor
+            consequat, tristique ligula.
+          </p>
+        </figure>
+
+        <div class="hidden md:flex sm:content-image-box">
+          <div class="flex flex-row border hover:bg-gray-100">
+            <figure class="w-4/12 m-4">
+              <img
+                class="w-full overflow-hidden"
+                src="./resources/images/thesis-fisma.jpg"
+              />
+            </figure>
+            <div class="lg:pl-5 flex flex-col justify-center w-8/12">
+              <h1 class="text-hookpurple font-semibold sm:text-md lg:text-2xl">
+                Fisma: Design and Prototype
+              </h1>
+              <p class="py-2 text-md text-gray-600">
+                Designer showcase of new prototype product
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden md:flex py-4 flex-row border hover:bg-gray-100">
+            <figure class="w-4/12 m-4">
+              <img
+                class="w-full overflow-hidden"
+                src="./resources/images/thesis-now-and-then.jpg"
+              />
+            </figure>
+            <div class="lg:pl-5 flex flex-col justify-center w-8/12">
+              <h1 class="text-hookpurple font-semibold sm:text-md lg:text-2xl">
+                Now and then
+              </h1>
+              <p class="py-2 text-md text-gray-600">
+                Research study about New York
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="border bg-softLilac">
+      <div class="flex justify-between">
+        <span class="pl-5 text-sm"
+          >© 2016 Colmar Academy. All rights reserved</span
+        >
+        <!--Mobile-->
+        <div class="hidden md:block">
+          <span class="pr-5"><a href="#">Terms</a></span>
+          <span class="pr-5"><a href="#">Privacy</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,3 +2,5 @@
 #.gitignore
 # ignore vscode settings
 .vscode
+debug.log
+/node_modules
